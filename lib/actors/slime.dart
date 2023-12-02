@@ -16,7 +16,7 @@ class Slime extends SpriteAnimationComponent
   bool isJumping = false;
   bool hitRight = false;
   bool hitLeft = false;
-  double moveSpeed = 300;
+  double moveSpeed = 200;
   Vector2 velocity = Vector2(0, 0);
 
   // z index
