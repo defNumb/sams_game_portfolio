@@ -7,9 +7,22 @@ enum SlimeDirection { left, right, none }
 
 class Slime extends SpriteAnimationComponent
     with CollisionCallbacks, HasGameRef<MyFirstGame> {
-  Slime() : super() {
-    debugMode = true;
-  }
+  Slime({
+    super.animation,
+    super.autoResize,
+    super.removeOnFinish,
+    super.playing,
+    super.paint,
+    super.position,
+    super.size,
+    super.scale,
+    super.angle,
+    super.nativeAngle,
+    super.anchor,
+    super.children,
+    super.priority,
+    super.key,
+  });
 
   SlimeDirection slimeDirection = SlimeDirection.none;
   bool onGround = false;
